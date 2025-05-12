@@ -1,0 +1,12 @@
+<body style="background-color: lightblue;">
+    <div style="text-align: center;">
+        <h1>Wordcount page</h1>
+        <p><a href="{% url 'about' %}">About</a></p>
+          <p><a href="{% url 'contact' %}">Contact</a></p>
+        <p>This is our home page</p>
+        <form action="{% url 'count' %}">
+            <textarea name="Fulltextarea" rows="20" cols="100" style="display: block; margin: 0 auto;"></textarea><br>
+            <input type="submit" value="Count!">
+        </form>
+    </div>
+</body>

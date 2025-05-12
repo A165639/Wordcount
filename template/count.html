@@ -1,0 +1,15 @@
+<body style="background-color: lightblue; text-align: center;">
+    <h1>Counted</h1>
+    <p><a href="{% url 'home' %}">Back</a></p>
+    <p><a href="{% url 'about' %}">About</a></p>
+      <p><a href="{% url 'contact' %}">Contact</a></p>
+    <br><br>
+    <p>{{ fulltext }}</p>
+    <br>
+    <p>Total word = {{ word }}</p>
+    <br><br>
+
+    {% for word, value in wordcount %}
+        <p>{{ word }} = {{ value }}</p>
+    {% endfor %}
+</body>
